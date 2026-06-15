@@ -376,10 +376,9 @@ footer{padding:24px 22px;text-align:center;font-size:11px;color:var(--muted);bor
           SLIDES = 4 → увеличьте если добавите слайды
         ══════════════════════════════════════════
         -->
-        <div class="car-slide"><div class="sph"><div class="sph-icon">🚐</div><div>src="photo1.jpg"</div></div><div class="scap">Вид снаружи</div></div>
-        <div class="car-slide"><div class="sph"><div class="sph-icon">💺</div><div>src="photo2.jpg"</div></div><div class="scap">Салон · 14 мест</div></div>
-        <div class="car-slide"><div class="sph"><div class="sph-icon">🛣️</div><div>src="photo3.jpg"</div></div><div class="scap">В дороге</div></div>
-        <div class="car-slide"><div class="sph"><div class="sph-icon">✨</div><div>src="photo4.jpg"</div></div><div class="scap">Комфорт</div></div>
+        <div class="car-slide"><img src="photo1.png" alt=""><div class="scap">Вид снаружи</div></div>
+        <div class="car-slide"><img src="photo2.png" alt=""><div class="scap">Салон · 14 мест</div></div>
+        <div class="car-slide"><img src="photo3.png" alt=""><div class="scap">В дороге</div></div>
       </div>
     </div>
     <div class="cnav l" id="cPrev">‹</div>
@@ -388,25 +387,7 @@ footer{padding:24px 22px;text-align:center;font-size:11px;color:var(--muted);bor
   <div class="cdots" id="cDots"></div>
 </section>
 
-<!-- VIDEO -->
-<section class="sec reveal" style="padding-top:0">
-  <div class="eye" data-t="vidEye">Видео</div>
-  <div class="stitle" data-t="vidTitle">Посмотрите машину</div>
-  <div class="vid-wrap">
-    <!--
-    КАК ДОБАВИТЬ ВИДЕО (mp4):
-      <video controls playsinline poster="cover.jpg">
-        <source src="video.mp4" type="video/mp4">
-      </video>
-    КАК ДОБАВИТЬ YOUTUBE:
-      <iframe allowfullscreen src="https://youtube.com/embed/ВАШ_ID"></iframe>
-    -->
-    <div class="vid-ph">
-      <div class="vplay"><svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><polygon points="6,3 20,12 6,21"/></svg></div>
-      <div class="vph-txt" data-t="vidHint">Вставьте &lt;video src="видео.mp4"&gt; или &lt;iframe&gt; с YouTube</div>
-    </div>
-  </div>
-</section>
+
 
 <!-- ROUTES -->
 <section class="sec alt reveal" style="padding-top:0">
@@ -689,7 +670,7 @@ function toggleTheme(){
 // ══════════════════════════════════════════
 // CAROUSEL
 // ══════════════════════════════════════════
-var SLIDES=4, ci=0, sx=0;
+var SLIDES=3, ci=0, sx=0;
 var ctrack=document.getElementById('carTrack');
 var cdots=document.getElementById('cDots');
 for(var i=0;i<SLIDES;i++){
